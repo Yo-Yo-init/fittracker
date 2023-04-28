@@ -1,0 +1,8 @@
+Package: fittracker
+Title: An R-package for tracking fitness goals
+Version: 0.1
+Authors@R: person("Dominic Pepper", email = "Lemon_Pepper@gmail.com", role = c("aut", "cre"))
+Description: This package provides functions to track fitness goals, including step counting, distance tracking, and total burned calories.
+License: MIT license
+Encoding: UTF-8
+LazyData: true

@@ -1,0 +1,32 @@
+Fitness Metrics Package
+
+This package provides functions to calculate fitness metrics such as step count, distance traveled, and calories burned based on input data.
+Installation
+
+You can install this package using the devtools package:
+
+
+devtools::install_github("Yo-Yo-init/fittracker")
+
+Usage
+
+To use this package, first load it using the library() function:
+
+library(fittracker)
+
+Then, you can use the get_fitness_metrics() function to calculate fitness metrics for your data:
+
+# Load sample fitness data
+data <- read.csv("fitness_data.csv")
+
+# Calculate fitness metrics
+metrics <- get_fitness_metrics(data)
+
+The get_fitness_metrics() function requires a data frame with columns for steps, distance, gender, age, weight, and height. If any of these columns are missing, the function will return an error. The calories_burned() function, which is called by get_fitness_metrics(), requires values for gender, age, weight, and height to be present and non-missing in the input data.
+
+Contributions
+
+Contributions to this package are welcome. If you encounter any bugs or issues, please create an issue on the package's GitHub repository. If you would like to contribute code, please fork the repository and submit a pull request with your changes.
+License
+
+This package is released under the MIT license. See the LICENSE file for more information.
